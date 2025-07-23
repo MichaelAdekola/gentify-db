@@ -37,11 +37,11 @@ class DuckDBClient:
         # now open *one* writer connection
         with self.engine.begin() as conn:
             for table, csv_path in mapping.items():
-                csv_path = Path(csv_path).as_posix()
+                abs_path = Path(csv_path).resolve().as_posix()
 
                 conn.exec_driver_sql(f"""
                     CREATE OR REPLACE TABLE {table} AS
-                    SELECT * FROM read_csv_auto('{csv_path}', HEADER = TRUE)
+                    SELECT * FROM read_csv_auto('{abs_path}', HEADER = TRUE)
                 """)
 
                 rows = conn.exec_driver_sql(f"SELECT COUNT(*) FROM {table}").scalar_one()
