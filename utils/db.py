@@ -54,8 +54,14 @@ class DuckDBClient:
     #  Query helpers (read-only via SQLAlchemy engine)                    #
     # ------------------------------------------------------------------ #
     def run_sql(self, sql: str) -> pd.DataFrame:
-        with self.engine.begin() as conn:
-            return pd.read_sql(sql, conn)
+        """Execute SQL via SQLAlchemy, return a pandas DataFrame."""
+        from sqlalchemy import text
+
+        with self.engine.connect() as conn:
+            result = conn.execute(text(sql))
+            df = pd.DataFrame(result.fetchall(), columns=result.keys())
+
+        return df
 
     def get_sql_database(self) -> SQLDatabase:
         """Supply to LangChain’s create_sql_query_chain()."""
