@@ -1,0 +1,14 @@
+# Python & Streamlit
+__pycache__/
+.venv/
+.streamlit/secrets.toml
+
+# DuckDB file
+gentify.duckdb
+
+# VS Code settings
+.vscode/
+
+# Jupyter / OS clutter
+.ipynb_checkpoints/
+*.DS_Store

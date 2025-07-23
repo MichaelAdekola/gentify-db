@@ -1,0 +1,21 @@
+product_id,product_name,category,brand,cost_price,selling_price,created_date
+1,Laptop,Electronics,TechCorp,650.0,899.99,2024-01-18
+2,Smartphone,Electronics,MobileTech,450.0,699.5,2025-01-07
+3,Tablet,Electronics,TechCorp,250.0,399.99,2024-03-31
+4,Wireless Headphones,Electronics,AudioPro,80.0,149.99,2025-03-21
+5,Bluetooth Speaker,Electronics,AudioPro,45.0,79.99,2025-02-21
+6,4K Monitor,Electronics,DisplayTech,180.0,299.99,2024-02-07
+7,Gaming Mouse,Electronics,GameGear,35.0,59.99,2023-10-27
+8,Mechanical Keyboard,Electronics,GameGear,75.0,129.99,2024-07-12
+9,External SSD,Electronics,StorageTech,75.0,129.99,2023-09-28
+10,Webcam,Electronics,VideoTech,50.0,89.99,2025-07-04
+11,Router,Electronics,NetTech,120.0,199.99,2024-11-08
+12,Smart Watch,Wearables,WearTech,150.0,249.5,2024-09-18
+13,Fitness Tracker,Wearables,WearTech,60.0,99.99,2025-03-13
+14,VR Headset,Wearables,VirtualTech,180.0,299.99,2024-11-23
+15,Drone,Cameras,AerialTech,300.0,499.99,2024-07-23
+16,Action Camera,Cameras,ActionCam,220.0,349.99,2025-05-19
+17,Noise Cancelling Headphones,Electronics,AudioPro,180.0,299.99,2024-05-25
+18,E-Reader,Books,ReadTech,80.0,129.99,2024-03-01
+19,Printer,Office,PrintTech,120.0,199.99,2023-08-07
+20,Projector,Office,DisplayTech,350.0,599.99,2023-09-09
